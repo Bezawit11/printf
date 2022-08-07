@@ -18,6 +18,8 @@ char str[2] = {'c', '\0'};
 va_list arg;
 va_start(arg, format);
 c = format;
+if (format == NULL)
+return (-1);
 while (*c != '\0')
 {
 while (*c != '%' && *c != '\0')
@@ -29,7 +31,7 @@ c++;
 if (*c != '\0')
 {
 c++;
-if (*c == 'c')
+if (*c == 'c' || *c == 'C')
 {
 a = va_arg(arg, int);
 *str = a;
@@ -41,7 +43,7 @@ else if (*c == '%')
 write(1, "%", 1);
 count = count + 1;
 }
-else if (*c == 's')
+else if (*c == 's' || *c == 'S')
 {
 s = va_arg(arg, char*);
 while (*s != '\0')
