@@ -46,6 +46,10 @@ count = count + 1;
 else if (*c == 's')
 {
 s = va_arg(arg, char*);
+if (s == NULL)
+{
+s = "(null)";
+}
 while (*s != '\0')
 {
 write(1, s, 1);
