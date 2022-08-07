@@ -31,9 +31,11 @@ c++;
 if (*c != '\0')
 {
 c++;
-if (*c == 'c' || *c == 'C')
+if (*c == 'c')
 {
 a = va_arg(arg, int);
+if (a == NULL)
+return (-1);
 *str = a;
 write(1, str, 1);
 count = count + 1;
@@ -43,9 +45,11 @@ else if (*c == '%')
 write(1, "%", 1);
 count = count + 1;
 }
-else if (*c == 's' || *c == 'S')
+else if (*c == 's')
 {
 s = va_arg(arg, char*);
+if (s == NULL)
+return (-1);
 while (*s != '\0')
 {
 write(1, s, 1);
