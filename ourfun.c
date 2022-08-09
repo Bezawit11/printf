@@ -65,6 +65,22 @@ return (rec(b));
  *
  *
  */
+int length_bi(unsigned int b, unsigned int base)
+  
+{
+int a = 0;
+while (b > 0)
+{
+b = b / base;
+a++;
+}
+return (a);
+}
+
+/**
+ *
+ *
+ */
 int rec(unsigned int n)
 
 {
@@ -81,7 +97,7 @@ n = rec(n / 2);
 a = r + '0';
 write(1, s, 1);
 }
-return (1);
+return (length_bi(n, 2));
 }
 
 /**
