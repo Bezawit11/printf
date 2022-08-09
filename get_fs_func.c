@@ -30,5 +30,9 @@ else if (*s == 'b')
 {
 return (unsigned_bi);
 }
+Else if (*s == '%')
+{
+Return (percent_print);
+}
 return (0);
 }

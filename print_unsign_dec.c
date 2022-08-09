@@ -18,6 +18,8 @@ char b;
 char *k;
 k = &b;
 n = va_arg(arg, unsigned int);
+If (n < 1 && n != 0)
+Return (-1);
 d = n + 0;
 if (n < 10 && n > 0)
 {
