@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- *  *print_number - prints integer
+ * *print_number - prints integer
  * *@n: input
  *  *Return: void
  * */
