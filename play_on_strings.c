@@ -5,7 +5,7 @@
 
 /**
  *  *rot13 - encode
- *   *@c: char pointer
+ *  *@c: char pointer
  *    *Return: returns a value
  */
 int rot13(va_list arg)
