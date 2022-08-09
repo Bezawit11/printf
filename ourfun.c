@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- *char_print - prints characters
+ *char_print - prints character
  *
  *Return: (1) 
  */
