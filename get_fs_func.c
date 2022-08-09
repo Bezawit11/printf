@@ -38,5 +38,9 @@ else if (*s == 'r')
 {
 return (reverse_array);
 }
+else if (*s == '%')
+{
+return (percent_print);
+}
 return (0);
 }
