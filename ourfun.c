@@ -52,15 +52,13 @@ char s;
 char *k;
 k = &s;
 b = va_arg(arg, unsigned int);
+if (b == NULL)
+return (-1);
 if (b == 0)
 {
 s = b + '0';
 write(1, k, 1);
 return (1);
-}
-if (b < 1 && b != 0)       
-{
-return (-1);
 }
 return (rec(b));
 }
