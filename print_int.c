@@ -6,7 +6,7 @@
 /**
  * *print_number - prints integer
  * *@n: input
- *  *Return: void
+ * *Return: void
  * */
 int print_decimal(va_list arg)
 
