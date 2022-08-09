@@ -58,7 +58,8 @@ s = b + '0';
 write(1, k, 1);
 return (1);
 }
-return (rec(b));
+rec(b);
+return (length_bi(b, 2));
 }
 
 /**
@@ -74,7 +75,7 @@ while (b > 0)
 b = b / base;
 a++;
 }
-return (a);
+return (a - 1);
 }
 
 /**
@@ -97,7 +98,7 @@ n = rec(n / 2);
 a = r + '0';
 write(1, s, 1);
 }
-return (length_bi(n, 2));
+return (1);
 }
 
 /**
