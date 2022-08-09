@@ -30,9 +30,7 @@ int count = 0;
 char *s;
 s = va_arg(arg, char*);
 if (s == NULL)
-{
-s = "(null)";
-}
+return (-1);
 while (*s != '\0')
 {
 write(1, s, 1);
