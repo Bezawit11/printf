@@ -50,7 +50,19 @@ int unsigned_bi(va_list arg)
 
 {
 unsigned int b;
+char s;
+char *k;
+k = &s;
 b = va_arg(arg, unsigned int);
+if (b == 0)
+{
+s = '0' + b;
+return (write(1, k, 1);
+}
+if (b < 1)        
+{
+return (-1);
+}
 return (rec(b));
 }
 
