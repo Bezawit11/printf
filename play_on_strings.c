@@ -4,9 +4,9 @@
 
 
 /**
- *  *rot13 - encode
- *   *@c: char pointer
- *    *Return: returns a value
+ * *rot13 - encode
+ * *@c: char pointer
+ * *Return: returns a value
  */
 int rot13(va_list arg)
 
@@ -38,7 +38,7 @@ return (i);
  *
  *
  *
- *
+ *Return: returns a negative value
  */
 int reverse_array(va_list arg)
 
