@@ -38,7 +38,7 @@ return (i);
  *
  *
  *
- *Return
+ *Return: returns a negative value
  */
 int reverse_array(va_list arg)
 
