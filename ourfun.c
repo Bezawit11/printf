@@ -14,8 +14,6 @@ int char_print(va_list arg)
 char str[2] = {'c', '\0'};
 char a;
 a = va_arg(arg, int);
-if (a == NULL)
-return (-1);
 *str = a;
 write(1, str, 1);
 return (1);
