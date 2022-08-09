@@ -6,7 +6,7 @@
 /**
  *
  *
- *
+ *Return: (1) 
  */
 int char_print(va_list arg)
 
