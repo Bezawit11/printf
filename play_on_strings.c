@@ -54,6 +54,8 @@ for (i = 0; s[i] != '\0'; i++)
 l = l + 1;
 }
 h = malloc(sizeof(char) * l + 1);
+if (h == NULL)
+return (-1);
 _memcpy(h, s, l);
 for (i = 0; i < l / 2; i++)
 {
