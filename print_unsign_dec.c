@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <unistd.h>
-#include <studio.h>
+#include <stdio.h>
 
 /**
 *print_number - prints integer
@@ -11,9 +11,9 @@
 int print_unsigned(va_list arg)
 
 {
-unsigned int m;
+unsigned int n;
 int a = 1;
-int h,d,c, i = 0, l = 0;
+int h, d, c, i = 0, l = 0;
 char b;
 char *k;
 k = &b;
@@ -45,7 +45,7 @@ for (h = 0; h <= i - 1; h++)
 a = a / 10;
 b = ((n / a) % 10) + '0';
 write (1, k, 1);
-l = l +1
+l = l + 1;
 }
 }
 return (l);
