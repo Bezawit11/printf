@@ -58,7 +58,7 @@ s = b + '0';
 write(1, k, 1);
 return (1);
 }
-if (b < 1)        
+if (b < 1 && b != 0)       
 {
 return (-1);
 }
