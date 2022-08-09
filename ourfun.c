@@ -14,6 +14,8 @@ int char_print(va_list arg)
 char str[2] = {'c', '\0'};
 char a;
 a = va_arg(arg, int);
+if (a == NULL)
+return (-1);
 *str = a;
 write(1, str, 1);
 return (1);
@@ -53,10 +55,8 @@ char *k;
 k = &s;
 b = va_arg(arg, unsigned int);
 if (b == 0)
-{
-s = '0' + b;
-return (write(1, k, 1));
-}
+s = b + '0';
+write(1, k, 1);
 if (b < 1)        
 {
 return (-1);
