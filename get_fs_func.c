@@ -30,5 +30,13 @@ else if (*s == 'b')
 {
 return (unsigned_bi);
 }
+else if (*s == 'R')
+{
+return (rot13);
+}
+else if (*s == 'r')
+{
+return (reverse_array);
+}
 return (0);
 }

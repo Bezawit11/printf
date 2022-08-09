@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
+
 
 /**
  *  *rot13 - encode
@@ -38,14 +40,46 @@ return (i);
  *
  *
  */
-void reverse_array(int *a, int n)
+int reverse_array(va_list arg)
 
 {
-int i, t;
-for (i = 0; i < n / 2; i++)
+int i, l = 0;
+char c;
+char *s, *h;
+s = va_arg(arg, char*);
+if (s == NULL)
+return (-1);
+for (i = 0; s[i] != '\0'; i++)
 {
-t = a[i];
-a[i] = a [n - 1 - i];
-a[n - 1 - i] = t;
+l = l + 1;
 }
+h = malloc(sizeof(char) * l + 1);
+_memcpy(h, s, l);
+for (i = 0; i < l / 2; i++)
+{
+c = h[i];
+h[i] = h[l - 1 - i];
+h[l - 1 - i] = c;
+}
+for (i = 0; i < l; i++)
+{
+write(1, h + i, 1);
+}
+return (l);
+}
+
+/**
+ *
+ *
+ *
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+
+{
+unsigned int i;
+for (i = 0; i < n; i++)
+{
+*(dest + i) = *(src + i);
+}
+return (dest);
 }
