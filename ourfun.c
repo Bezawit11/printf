@@ -103,7 +103,7 @@ return (length_bi(n, 2));
 /**
  *
  *
- *Returns
+ *Returns: (1)
  */
 int percent_print(__attribute__((unused))va_list arg)
 
