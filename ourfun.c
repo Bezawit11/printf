@@ -82,12 +82,12 @@ return (1);
  *
  *
  */
-/*int percent_print()
+int percent_print(__attribute__((unused))va_list arg)
 
 {
 write(1, "%", 1);
 return (1);
-}*/
+}
 
 /**
  *
