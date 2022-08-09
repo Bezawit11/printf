@@ -51,6 +51,10 @@ int unsigned_bi(va_list arg)
 {
 unsigned int b;
 b = va_arg(arg, unsigned int);
+if (b == NULL)
+{
+return (-1);
+}
 return (rec(b));
 }
 
