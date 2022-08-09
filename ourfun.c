@@ -52,8 +52,6 @@ char s;
 char *k;
 k = &s;
 b = va_arg(arg, unsigned int);
-if (b < 0)
-return (-1);
 if (b == 0)
 {
 s = b + '0';
@@ -97,16 +95,3 @@ int percent_print(__attribute__((unused))va_list arg)
 write(1, "%", 1);
 return (1);
 }
-
-/**
- *
- *
- *
- */
-
-/*int decimal_print(int d)
-
-{
-if (d < 0)
-write(1, "-", 1);
-}*/
