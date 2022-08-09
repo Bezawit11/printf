@@ -57,7 +57,7 @@ b = va_arg(arg, unsigned int);
 if (b == 0)
 {
 s = '0' + b;
-return (write(1, k, 1);
+return (write(1, k, 1));
 }
 if (b < 1)        
 {
