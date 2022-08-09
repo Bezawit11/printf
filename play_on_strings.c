@@ -4,7 +4,7 @@
 
 
 /**
- *  *rot13 - encode
+ * *rot13 - encode
  * *@c: char pointer
  * *Return: returns a value
  */
