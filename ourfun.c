@@ -66,7 +66,7 @@ return (rec(b));
  *
  *
  */
-int rec(int n)
+int rec(unsigned int n)
 
 {
 int r;
