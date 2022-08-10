@@ -78,7 +78,7 @@ while (b > 0)
 b = b / base;
 a++;
 }
-return (a - 1);
+return (a);
 }
 
 /**
