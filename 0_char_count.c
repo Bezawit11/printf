@@ -30,7 +30,7 @@ if (*c != '\0')
 if (*(c + 1) == '\0')
 {
 write(1, NULL, 1);
-return (d);
+return (-1);
 }
 c++;
 s = c;
