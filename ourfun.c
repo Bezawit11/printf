@@ -30,8 +30,10 @@ int count = 0;
 char *s;
 s = va_arg(arg, char*);
 if (s == NULL)
+{
 write(1, "(null)", 6);
 return (6);
+}
 while (*s != '\0')
 {
 write(1, s, 1);
