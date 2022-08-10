@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- **print_number - prints integers
+ **print_number - prints integer
  **@n: inputs
  **Return: void
  **/
