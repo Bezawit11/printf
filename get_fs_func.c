@@ -5,8 +5,8 @@
 
 /**
  *get_op_func - returns a pointer to a function
- * *@s: operator passed as an argument
- * *Return: returns function pointers
+ **@s: operator passed as an argument
+ **Return: returns function pointers
  */
 int (*get_fs_func(const char *s))(va_list arg)
 
