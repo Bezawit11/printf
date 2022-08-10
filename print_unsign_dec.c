@@ -32,6 +32,11 @@ if (n < 0)
 m = UINT_MAX + n + 1;
 d = m;
 }
+else
+{
+m = n;
+d = m;
+}
 while (d != 0)
 {
 i++;
