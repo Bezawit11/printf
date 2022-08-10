@@ -112,3 +112,13 @@ int percent_print(__attribute__((unused))va_list arg)
 write(1, "%", 1);
 return (1);
 }
+
+/**
+ *
+ *
+ */
+int non_specifier(__attribute__((unused))va_list arg)
+  
+{
+return (2);
+}
