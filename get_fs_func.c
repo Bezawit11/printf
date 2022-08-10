@@ -42,5 +42,11 @@ else if (*s == '%')
 {
 return (percent_print);
 }
+else
+{
+write(1, "%", 1);
+write(1, s, 1);
+return (2);
+}
 return (0);
 }
