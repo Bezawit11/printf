@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
  *get_op_func - returns a pointer to a function
- *   *@s: operator passed as an argument
- *    *Return: returns function pointers
+ * *@s: operator passed as an argument
+ * *Return: returns function pointers
  */
 int (*get_fs_func(const char *s))(va_list arg)
 
@@ -41,6 +42,12 @@ return (reverse_array);
 else if (*s == '%')
 {
 return (percent_print);
+}
+else
+{
+write(1, "%", 1);
+write(1, s, 1);
+return (non_specifier);
 }
 return (0);
 }

@@ -27,6 +27,11 @@ c++;
 }
 if (*c != '\0')
 {
+if (*(c + 1) == '\0')
+{
+write(1, NULL, 1);
+return (-1);
+}
 c++;
 s = c;
 d = d + get_fs_func(s)(arg);
