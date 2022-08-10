@@ -18,6 +18,11 @@ char b;
 char *k;
 k = &b;
 n = va_arg(arg, int);
+if (n == 0)
+{
+write(1, "0", 1);
+return (1);
+}
 d = n + 0;
 if (n < 10 && n > 0)
 {
