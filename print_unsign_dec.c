@@ -32,19 +32,19 @@ while (d != 0)
 i++;
 d = d / 10;
 }
-i = i -1;
+i = i - 1;
 for (c = 0; c < i; c++)
 {
 a = a * 10;
 }
-b = (n / a) + '0';
-write (1, k, 1);
+b = (n / a) +'0';
+write(1, k, 1);
 l = l + 1;
 for (h = 0; h <= i - 1; h++)
 {
 a = a / 10;
 b = ((n / a) % 10) + '0';
-write (1, k, 1);
+write(1, k, 1);
 l = l + 1;
 }
 }
