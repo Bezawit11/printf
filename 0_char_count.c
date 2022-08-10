@@ -29,8 +29,7 @@ if (*c != '\0')
 {
 if (*(c + 1) == '\0')
 {
-write(1, c, 1);
-d = d + 1;
+write(1, NULL, 1);
 return (d);
 }
 c++;
