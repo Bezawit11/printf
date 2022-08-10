@@ -19,11 +19,6 @@ if (format  == NULL)
 return (-1);
 while (*c != '\0')
 {
-if (*c == '%')
-{
-write(1, "%", 1);
-return (1);
-}
 while (*c != '%' && *c != '\0')
 {
 write(1, c, 1);
