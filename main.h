@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int _printf(const char*format, ...);
+int _printf(const char *format, ...);
 int char_print(va_list arg);
 int string_print(va_list arg);
 int percent_print();
