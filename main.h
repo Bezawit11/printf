@@ -17,6 +17,6 @@ int rot13(va_list arg);
 int reverse_array(va_list arg);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int length_bi(unsigned int b, unsigned int base);
-int non_specifier(va_lisr arg);
+int non_specifier();
 int (*get_fs_func(const char *s))(va_list arg);
 #endif
