@@ -5,7 +5,7 @@
 
 /**
 *print_number - prints integer
-*@arg: argument
+*@arg: argumen
 *Return: int
 */
 int print_unsigned(va_list arg)
