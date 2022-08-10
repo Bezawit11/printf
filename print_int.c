@@ -37,6 +37,7 @@ l = l + 1;
 else if (n == INT_MIN)
 {
 write(1, "-", 1);
+l = l + 1;
 m = n + 0;
 n = INT_MAX;
 d = n;
@@ -60,7 +61,7 @@ a = a / 10;
 b = ((n / a) % 10) + '0';
 if (h == i - 1 && m != 0)
 {
-b = b + '1';
+b = '56';
 }
 write(1, k, 1);
 l = l + 1;
