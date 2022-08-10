@@ -11,7 +11,7 @@
 int print_decimal(va_list arg)
 
 {
-int n, a = 1;
+int n, m, a = 1;
 int h, d, c, i = 0, l = 0;
 char b;
 char *k;
@@ -29,10 +29,10 @@ else
 if (n < 0)
 {
 write(1, "-", 1);
-n = n * -1;
-d = n;
+d = d * -1;
 l = l + 1;
 }
+m = d;
 while (d != 0)
 {
 i++;
@@ -43,13 +43,13 @@ for (c = 0; c < i; c++)
 {
 a = a * 10;
 }
-b = (n / a) + '0';
+b = (m / a) + '0';
 write(1, k, 1);
 l = l + 1;
 for (h = 0; h <= i - 1; h++)
 {
 a = a / 10;
-b = ((n / a) % 10) + '0';
+b = ((m / a) % 10) + '0';
 write(1, k, 1);
 l = l + 1;
 }
