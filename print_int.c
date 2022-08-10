@@ -37,7 +37,7 @@ l = l + 1;
 else if (n == INT_MIN)
 {
 write(1, "-", 1);
-m = n;
+m = n + 0;
 n = INT_MAX;
 d = n;
 }
@@ -58,7 +58,7 @@ for (h = 0; h <= i - 1; h++)
 {
 a = a / 10;
 b = ((n / a) % 10) + '0';
-if (h = i - 1 && m != 0)
+if (h == i - 1 && m != 0)
 {
 b = b + '1';
 }
