@@ -13,12 +13,7 @@ int print_unsigned(va_list arg)
 
 {
 int n, a = 1, l = 0;
-<<<<<<< HEAD
-unsigned int m;
-unsigned int h, d, c, i = 0;
-=======
 unsigned int m, h, d, c, i = 0;
->>>>>>> 6c3a99d7ca989884c0bd16d0af6fb63cc7f9fc4d
 char b;
 char *k;
 k = &b;
@@ -42,14 +37,11 @@ if (n < 0)
 m = UINT_MAX + n + 1;
 d = m;
 }
-<<<<<<< HEAD
-=======
 else
 {
 m = n;
 d = m;
 }
->>>>>>> 6c3a99d7ca989884c0bd16d0af6fb63cc7f9fc4d
 while (d != 0)
 {
 i++;
