@@ -21,7 +21,7 @@ return (1);
 
 /**
  *string_print - prints a string
- *
+ *Return: 0
  */
 int string_print(va_list arg)
 
