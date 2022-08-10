@@ -43,6 +43,14 @@ else if (*s == '%')
 {
 return (percent_print);
 }
+else if (*s == 'o')
+{
+return (octal);
+}
+else if (*s == 'x')
+{
+return (hexi_s);
+}
 else
 {
 write(1, "%", 1);
