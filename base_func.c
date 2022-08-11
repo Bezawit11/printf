@@ -88,10 +88,10 @@ r = t;
 if (n > 0)
 {
 r = n % b;
-n = invert(n / b, b, n % b);
+n = invert_hex(n / b, b, n % b);
 if (r > 9 && r < 16)
 {
-a = r + '7';
+a = r + '7' + ' ';
 write(1, s, 1);
 }
 else
