@@ -53,19 +53,19 @@ return (length_base(n, 8));
  *
  *
  */
-int invert(int n, int b)
+int invert(int n, int b, int t)
 
 {
 int r;
 char a;
 char *s;
 s = &a;
-if (n == 1)
-r = 1;
+if (n == 0)
+r = t;
 if (n > 0)
 {
 r = n % b;
-n = rec(n / b);
+n = invert(n / b, b, n % b);
 a = r + '0';
 write(1, s, 1);
 }
