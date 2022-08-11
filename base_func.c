@@ -11,7 +11,7 @@
 int hexi_s(va_list arg)
 
 {
-int n, t;
+unsigned int n, t = 1;
 char s;
 char *k;
 k = &s;
@@ -33,7 +33,7 @@ return (length_base(n, 16));
 int octal(va_list arg)
 
 {
-int n, t;
+unsigned int n, t = 1;
 char s;
 char *k;
 k = &s;
@@ -53,10 +53,10 @@ return (length_base(n, 8));
  *
  *
  */
-int invert(int n, int b, int t)
+int invert(unsigned int n, unsigned int b, unsigned int t)
 
 {
-int r;
+unsigned int r;
 char a;
 char *s;
 s = &a;
@@ -77,7 +77,7 @@ return (1);
  *
  *
  */
-int length_base(int n, int base)
+int length_base(unsigned int n, unsigned int base)
 
 {
 int a = 0;

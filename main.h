@@ -18,9 +18,9 @@ int reverse_array(va_list arg);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int length_bi(unsigned int b, unsigned int base);
 int hexi_s(va_list arg);
-int invert(int n, int b, int t);
+int invert(unsigned int n, unsigned int b, unsigned int t);
 int octal(va_list arg);
-int length_base(int n, int base);
+int length_base(unsigned int n, unsigned int base);
 int non_specifier();
 int (*get_fs_func(const char *s))(va_list arg);
 #endif
