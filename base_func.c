@@ -22,7 +22,7 @@ s = n + '0';
 write(1, k, 1);
 return (1);
 }
-invert(n ,16, t);
+invert_hex(n ,16, t);
 return (length_base(n, 16));
 }
 
@@ -72,6 +72,36 @@ write(1, s, 1);
 return (1);
 }
 
+/**
+ *
+ *
+ */
+int invert_hex(unsigned int n, unsigned int b, unsigned int t)
+
+{
+unsigned int r;
+char a;
+char *s;
+s = &a;
+if (n == 0)
+r = t;
+if (n > 0)
+{
+r = n % b;
+n = invert(n / b, b, n % b);
+if (r > 9 && r < 16)
+{
+a = r + '7';
+write(1, s, 1);
+}
+else
+{
+a = r + '0';
+write(1, s, 1);
+}
+}
+return (1);
+}
 /**
  *
  *
