@@ -51,6 +51,10 @@ else if (*s == 'x')
 {
 return (hexi_s);
 }
+else if (*s == 'X')
+{
+return(hexi_cap);
+}
 else
 {
 write(1, "%", 1);
