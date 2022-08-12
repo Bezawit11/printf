@@ -133,7 +133,7 @@ return (6);
 }
 while (*s != '\0')
 {
-if (*s == '\' && *(s + 1) == 'n')
+if (*s == '\' && (*(s + 1) == 'n'))
 {
 write(1, s, 1);
 write(1, 'x', 1);
@@ -154,9 +154,9 @@ return (count);
 /**
  *
  *
- */
+ *
 int non_specifier(__attribute__((unused))va_list arg)
   
 {
 return (2);
-}
+}*/
