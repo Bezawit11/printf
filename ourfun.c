@@ -123,8 +123,11 @@ return (1);
 int string_print_cap(va_list arg)
 
 {
+char str[2] = {'c', '\0'};
+char a[] = {'\\', 'x', '0', 'A', '\0'};
 int count = 0;
 char *s;
+int i;
 s = va_arg(arg, char*);
 if (s == NULL)
 {
@@ -133,13 +136,14 @@ return (6);
 }
 while (*s != '\0')
 {
-if (*s == '\' && (*(s + 1) == 'n'))
+if (*s == '\n') 
 {
-write(1, s, 1);
-write(1, 'x', 1);
-write(1, '0', 1);
-write(1, 'A', 1);
-s++;
+for (i = 0; a[i] != '\0'; i++)
+{
+*str = a[i];
+write(1, str, 1);
+count = count + 1;
+}
 }
 else
 {
@@ -154,9 +158,9 @@ return (count);
 /**
  *
  *
- *
+ */
 int non_specifier(__attribute__((unused))va_list arg)
   
 {
 return (2);
-}*/
+}
