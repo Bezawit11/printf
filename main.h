@@ -24,6 +24,7 @@ int invert(unsigned int n, unsigned int b, unsigned int t);
 int invert_hex(unsigned int n, unsigned int b, unsigned int t);
 int invert_hex_cap(unsigned int n, unsigned int b, unsigned int t);
 int length_base(unsigned int n, unsigned int base);
+int string_print_cap(va_list arg);
 int non_specifier();
 int (*get_fs_func(const char *s))(va_list arg);
 #endif
