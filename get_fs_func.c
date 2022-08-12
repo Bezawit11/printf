@@ -55,6 +55,10 @@ else if (*s == 'X')
 {
 return(hexi_cap);
 }
+else if (*s == 'S')
+{
+return (string_print_cap);
+}
 else
 {
 write(1, "%", 1);
