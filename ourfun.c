@@ -137,14 +137,16 @@ if (*s == '\' && *(s + 1) == 'n')
 {
 write(1, s, 1);
 write(1, 'x', 1);
+write(1, '0', 10;
+write(1, 'A', 1);
 s++;
 }
 else
 {
 write(1, s, 1);
 count = count + 1;
-s++;
 }
+s++;
 }
 return (count);
 }
