@@ -120,6 +120,39 @@ return (1);
  *
  *
  */
+int string_print_cap(va_list arg)
+
+{
+int count = 0;
+char *s;
+s = va_arg(arg, char*);
+if (s == NULL)
+{
+write(1, "(null)", 6);
+return (6);
+}
+while (*s != '\0')
+{
+if (*s == '\' && *(s + 1) == 'n')
+{
+write(1, s, 1);
+write(1, 'x', 1);
+s++;
+}
+else
+{
+write(1, s, 1);
+count = count + 1;
+s++;
+}
+}
+return (count);
+}
+
+/**
+ *
+ *
+ */
 int non_specifier(__attribute__((unused))va_list arg)
   
 {
